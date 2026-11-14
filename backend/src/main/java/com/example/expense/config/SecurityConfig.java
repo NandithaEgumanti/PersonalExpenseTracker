@@ -47,10 +47,10 @@ public class SecurityConfig {
 
         CorsConfiguration config = new CorsConfiguration();
 
-        config.setAllowedOrigins(
-                Arrays.asList("http://localhost:5173")
-        );
-
+        config.setAllowedOrigins(Arrays.asList(
+    "http://localhost:5173",
+    "https://personal-expense-tracker-frontend-106f.onrender.com"
+));
         config.setAllowedMethods(
                 Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS")
         );
